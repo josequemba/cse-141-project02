@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const authorsRoutes = require("./authorsRoutes");
 const booksRoutes = require("./bookRoutes");
 const swaggerRoute = require("./swagger")
 
@@ -11,5 +12,7 @@ router.get("/", (req, res) => {
 });
 
 router.use("/books", booksRoutes);
+
+router.use("/authors", authorsRoutes);
 
 module.exports = router;

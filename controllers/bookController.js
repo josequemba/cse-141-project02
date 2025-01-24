@@ -75,7 +75,7 @@ const createBook = async (req, res) => {
       console.error("Error Creating a book:", error);
       res
         .status(500)
-        .json(error || "An error occurred while updating the book." );
+        .json(error || "An error occurred while creating the book." );
     }
 };
 
