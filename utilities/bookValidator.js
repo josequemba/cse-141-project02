@@ -40,7 +40,23 @@ validate.saveBookRules = () => {
       .notEmpty()
       .withMessage("Please provide availability status.")
       .isBoolean()
-      .withMessage("Available must be a boolean (true or false).")
+      .withMessage("Available must be a boolean (true or false)."),
+
+    body("language")
+      .trim()
+      .escape()
+      .notEmpty()
+      .withMessage("Please provide the book's language.")
+      .isString()
+      .withMessage("Genre must be a language string."),
+
+    body("pageCount")
+      .notEmpty()
+      .withMessage("Please provide the number of pages.")
+      .isInt({ min: 5 })
+      .withMessage(
+        `Mumber of pages must be a valid number with the minimum of 5 pages.`
+      ),
   ];
 };
 

@@ -57,6 +57,8 @@ const createBook = async (req, res) => {
         publishedYear: req.body.publishedYear,
         genre: req.body.genre,
         available: req.body.available,
+        language: req.body.language,
+        pageCount: req.body.pageCount
       }
   
       const result = await mongodb
@@ -93,6 +95,8 @@ const updateBook = async (req, res) => {
         publishedYear: req.body.publishedYear,
         genre: req.body.genre,
         available: req.body.available,
+        language: req.body.language,
+        pageCount: req.body.pageCount
       }
   
       const result = await mongodb
