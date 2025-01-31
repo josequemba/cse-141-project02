@@ -91,6 +91,12 @@
                 },
                 "available": {
                   "example": "any"
+                },
+                "language": {
+                  "example": "any"
+                },
+                "pageCount": {
+                  "example": "any"
                 }
               }
             }
@@ -178,6 +184,12 @@
                   "example": "any"
                 },
                 "available": {
+                  "example": "any"
+                },
+                "language": {
+                  "example": "any"
+                },
+                "pageCount": {
                   "example": "any"
                 }
               }
